@@ -16,11 +16,11 @@ I recommend using only LOWERCASE letters in your username, because it makes thin
 This course does not have particular requirements for the username (some other courses may want you to have your personal name and NEUID, for example).  You will submit information allowing me to connect your university information with your github account as part of your first assignment.
 
 Once you have a github account, you will need to create a personal copy of the class repository.  Do this by following this link:
-- $SENPAI_GITHUB_LINK
+- https://rebrand.ly/seainfo6250-github
 
 ### Slack.com
 You will need a (free of cost) account on slack.com to join in the discussion there.  That account is specific to the class workspace (there is not a "general" account as on github)
-- $SENPAI_SLACK_LINK
+- https://rebrand.ly/seainfo6250-slack
 
 I recommend the desktop client and/or the mobile client over the web-based one.  Slack is where most info on the class is discussed, just like many programming shops. 
 
@@ -71,7 +71,7 @@ Many MANY examples in class will be done at the command line, as will documentat
 ### Cloning the class repository
 
 If you follow the below link, you will create a personal copy of the class repository on your Github account.
-- $SENPAI_GITHUB_LINK
+- https://rebrand.ly/seainfo6250-github
 
 You only have to do so once. After you've created this copy on github, you will want to "clone" this repository to your personal computer. 
 
