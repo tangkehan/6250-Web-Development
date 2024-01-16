@@ -2,7 +2,8 @@ const path = require('path');
 
 const people = `
 Name           |  NEUID   | Email                     | Slack handle           | github username
-Kehan Tang     |002672980 |tang.keh@northeastern.edu  | @Kehan Tang            | OK_Kehan
+Brett Ritter   | ???      | b.ritter@northeastern.edu | @Brett Ritter (He/Him) | swiftone
+
 `.split('\n') // convert to array of lines
 .filter( line => !!line.replace(/\s/g,'' )); // Remove empty lines
 
