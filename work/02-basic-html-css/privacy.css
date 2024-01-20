@@ -1,0 +1,19 @@
+.text-content {
+    margin: 1.5rem auto;
+    padding: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    max-width:80rem;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 1.5rem;
+    padding:0.5rem;
+    
+}
+
+p::first-letter {
+    font-size: 150%;
+    font-weight: bold;
+    line-height: 1.6;
+}

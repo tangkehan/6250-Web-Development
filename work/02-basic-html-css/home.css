@@ -1,0 +1,19 @@
+li { 
+    color: rgb(29, 46, 93);
+    text-decoration: inherit;
+    padding-left: 2rem;
+}
+
+
+
+.content {
+    margin: 1.5rem auto;
+    padding: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    max-width:80rem;
+    list-style-type: "\1F431";
+}
+
+.content a{
+    padding-left: 1rem;
+}
