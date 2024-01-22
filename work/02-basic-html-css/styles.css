@@ -1,0 +1,56 @@
+body {
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+    font-family: Cursive, sans-serif;
+    font-size: 1.25rem;
+}
+
+/* here is the header part */
+header {  
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background: hsl(43 58% 78%) ;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    margin: 10px;
+}
+
+main{
+    flex: 1;
+    padding:2rem;
+    background-color: #fbfeee;
+
+}
+
+a {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #0066cc;
+    transition: color 0.3s ease; 
+}
+
+a:hover {
+    color: #e82b7a4f;
+}
+
+
+h1{
+    text-align: center;
+}
+
+.footer {
+    background: hsl(43 58% 78%) ;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
