@@ -8,21 +8,18 @@ function compare( word, guess ) {  // DO NOT MODIFY
 // num is the numbers of common letters in two words
 let num = 0;
 
-// convert each char in word to lowercase and store it in a list
-const wordList = [];
+// convert each char in word to lowercase and store it
+const charCount = {};
 for (const c of word.toLowerCase()){
-  wordList.push(c);
+  charCount[c] = (charCount[c] || 0) + 1;
 }
 
 for (const s of guess.toLowerCase()){
-  // check if the guess number in the wordlist
-  if(wordList.includes(s)){
+  // check if the guess number in the charCount
+  if(charCount[s] && charCount[s] > 0){
     num += 1;
-
-    // get the index of this character in wordlist 
-    // and remove its occurrence from wordList
-    const index = wordList.indexOf(s);
-    wordList.splice(index, 1);
+    // remove one of its occurrence from charCount
+    charCount[s] -= 1
   }
   // if not we continue to check next character
   else{
