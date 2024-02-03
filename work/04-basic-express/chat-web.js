@@ -12,6 +12,7 @@ const chatWeb = {
       <html>
         <head>
           <title>Chat</title>
+          <link rel="stylesheet" type="text/css" href="/style.css">
         </head>
         <body>
           <div id="chat-app">
@@ -26,8 +27,16 @@ const chatWeb = {
 
   getMessageList: function(chat) {
     return `<ol class="messages">` +
-      // Fill in
-      // Generate the HTML for the list of messages
+      chat.messages.map(message => `
+      <li>
+        <div class = "message">
+          <img class="user-image" src="/images/avatar-${message.sender.toLowerCase()}.jpg" 
+            alt="${message.sender}'s Image" >
+          <span class = "sender">${message.sender}</span>
+          <span class = "text">${message.text}</span>
+        </div>
+      </li>
+      `).join('') +
       `</ol>`;
   },
   getUserList: function(chat) {
@@ -48,8 +57,16 @@ const chatWeb = {
     `</ul>`;
   },
   getOutgoingSection: function() {
-    // Fill in
     // Generate the HTML for a form to send a message
+    return `
+      <div class = "getOutgoing">
+        <form action="/chat" method="POST">
+          <input type = "hidden" name="username" value = "Amit">
+          <input id="text" type="text"  name="text" requried>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    `;
   }
 };
 module.exports = chatWeb;

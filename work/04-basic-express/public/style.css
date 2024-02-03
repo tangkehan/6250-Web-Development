@@ -1,0 +1,96 @@
+body{
+    background-color: #f2f2f2;
+    font-size:1.2rem;
+}
+
+#chat-app {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    max-width: 60rem;
+    margin: auto;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: hsl(0, 0%, 100%) ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+.users {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius:0.5rem;
+    justify-content: space-around;
+    width: 10rem;
+    background-color:#FAF8CC;
+}
+
+.user {  
+    font-size:1.5rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    border-radius: 0.5rem
+}
+
+.user-image{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 5%;
+}
+
+.messages {
+    list-style: none;
+    padding: 0;
+}
+
+.message {
+    background-color: #d9edf7;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius:0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.sender{
+    margin-left: 1rem;
+    width: 2rem;
+    font-weight: bold;
+    margin-right: 1.5rem;
+
+}
+
+.getOutgoing {
+    margin-top: 2rem;
+}
+  
+form {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    margin-right: 0.5rem;
+}
+
+input[type="text"] {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    width: 15rem;
+}
+
+button {
+    margin-left: 1rem;
+    padding: 1rem 1rem;
+    background-color: #5bc0de;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #31b0d5;
+}
