@@ -7,4 +7,4 @@
 # the files depend on your system
 # it is created when we run `npm install`
 node_modules
-
+../../.DS_Store
