@@ -1,0 +1,118 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+form {
+    margin-top: 1.25rem; 
+}
+
+p {
+    color: #333;
+    line-height: 1.5;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 0.625rem; 
+}
+
+input[type="text"] {
+    width: 50%;
+    padding: 0.625rem; 
+    margin-bottom: 0.625rem; 
+}
+
+button {
+    padding: 0.625rem 1.25rem; 
+    border-radius:0.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.error-message{
+    color:deeppink;
+}
+
+.message{
+    font-size:1.5rem;
+    color:deeppink;
+}
+
+.words-container{
+    background-color: rgba(76, 123, 76, 0.299);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.words-list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.guessed-words-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 0;
+    color: black;
+    list-style: none;
+}
+
+.guessed-word{
+    color: red;
+}
+
+.button-container {
+    display: flex;
+    gap:2rem;
+}
+
+@media (max-width: 55rem) {
+    .words-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .guessed-words-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
