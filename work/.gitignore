@@ -9,3 +9,6 @@
 node_modules
 ../../.DS_Store
 ../../project1/node_modules/
+public/script.js.map
+public/script.js
+package-lock.json
