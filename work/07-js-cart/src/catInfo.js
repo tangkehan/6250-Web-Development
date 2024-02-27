@@ -22,10 +22,9 @@ export const PAGES = {
 }
 
 export const state = {
-    cart: [],
+    cart: {},
     page: PAGES.PRODUCTS,
-    quantity: 0,
+    totalQuantity: 0,
     totalPrice: 0,
-    showCart: true
 }
 
