@@ -8,3 +8,7 @@
 # it is created when we run `npm install`
 node_modules
 ../../.DS_Store
+../../project1/node_modules/
+script.js.map
+script.js
+package-lock.json

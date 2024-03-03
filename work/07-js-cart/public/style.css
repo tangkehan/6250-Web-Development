@@ -1,0 +1,135 @@
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.cat-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.cat-name {
+    color:rgb(225, 3, 225);
+    font-weight: bold;
+}
+
+.cat-price {
+    margin-top: 5px;
+}
+
+.add-to-cart {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3;
+}
+
+.cart-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+.view-cart {
+    margin-top: 20px;
+    padding: 10px 20px;
+    margin-left: 2rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.view-cart:hover {
+    background-color: #218838;
+}
+
+
+.item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.item-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-name {
+    margin-bottom: 5px;
+}
+
+.item-quantity {
+    margin-bottom: 5px;
+}
+
+.item-cost {
+    margin-bottom: 5px;
+}
+
+.item-button {
+    display: flex;
+    align-items: center;
+}
+
+.item-button button {
+    margin-left: 10px;
+}
+
+.cart-quantity, .cart-price {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.cart button {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.checkout, .hide-cart {
+    margin-top: 20px;
+}
+
+.hide-cart, .checkout{
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50; 
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+
+.hide-cart, .checkout:hover {
+    background-color: #45a049; 
+}
