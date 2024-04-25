@@ -34,12 +34,16 @@ const Chat = ({username, messages, users, getChannelMessages, sendMessage, onLog
         onLogout();
     }
 
-    function renderUserList(users){
+    function renderUserList(){
       // const usersArray = users.users;
-
+      if (users.users === undefined) {
+        return;
+      }
+      
+      console.log(users)
       return (
           <ul className="users">
-            {Object.values(users).map((user, index) => (    
+            {users.users.map((user, index) => (    
               <li key={index} className="user">
                   <span className="username">{user}</span>
               </li>
@@ -78,7 +82,7 @@ const Chat = ({username, messages, users, getChannelMessages, sendMessage, onLog
           </div>
           <div className="user-list-container">
                 <h2>Online User List</h2>
-                <div className="user-list">{renderUserList(users)}</div>
+                <div className="user-list">{renderUserList()}</div>
           </div>
           <div>
                 <button className={currChannel === 'general' ? 'active-channel' : 'channel'} onClick={() => setCurrChannel('general')}>General</button>
