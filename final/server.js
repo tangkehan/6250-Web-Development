@@ -79,14 +79,13 @@ app.get('/api/messages/:channel', (req, res) => {
       res.status(401).json({ error: 'auth-missing' });
       return;
     }
-    console.log('1')
+   
     
-    // const { channel } = req.params;
+  
     const channel = req.params.channel;
-    console.log(channel)
-    // const { channel } = req.query; 
+   
     const channelMessages = messages.getMessages(channel);
-    console.log(channelMessages)
+   
     res.json(channelMessages);
 });
 

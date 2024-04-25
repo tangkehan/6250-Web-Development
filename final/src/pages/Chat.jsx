@@ -35,11 +35,11 @@ const Chat = ({username, messages, users, getChannelMessages, sendMessage, onLog
     }
 
     function renderUserList(users){
-      const usersArray = users.users;
+      // const usersArray = users.users;
 
       return (
           <ul className="users">
-            {usersArray.map((user, index) => (    
+            {Object.values(users).map((user, index) => (    
               <li key={index} className="user">
                   <span className="username">{user}</span>
               </li>
